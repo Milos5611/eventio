@@ -52,12 +52,6 @@ gulp.task("copy_index", function () {
         .pipe(gulp.dest(webpackConfig.output.path));
 });
 
-gulp.task("copy_configuration_prod", function () {
-    return gulp.src(path.resolve(__dirname + "/envconfig", "configuration.prod.js"))
-        .pipe(rename("configuration.js"))
-        .pipe(gulp.dest(webpackConfig.output.path));
-});
-
 gulp.task("webpackDevServer", shell.task([
     "npm run webpackDevServer"
 ]));
@@ -73,7 +67,7 @@ gulp.task("copy_favicon", function () {
         .pipe(gulp.dest(webpackConfig.output.path));
 });
 
-gulp.task("webpack_prod", [ "clean", "copy_index", "copy_configuration_prod", "copy_fonts", "copy_favicon" ], function () {
+gulp.task("webpack_prod", [ "clean", "copy_index", "copy_fonts", "copy_favicon" ], function () {
     return gulp.src(webpackConfig.index)
         .pipe(webpackStream(webpackConfig))
         .pipe(gulp.dest(webpackConfig.output.path));

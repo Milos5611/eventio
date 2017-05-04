@@ -1,6 +1,6 @@
 {
   "name": "Eventio",
-  "version": "1.0",
+  "version": "0.1.0",
   "main": "./lib/index.js",
   "title": "STRV",
   "repository": {
@@ -72,7 +72,9 @@
     "style-loader": "0.13.1",
     "url-loader": "0.5.7",
     "webpack": "1.14.0",
-    "webpack-dev-server": "1.16.2"
+    "webpack-dev-server": "1.16.2",
+    "webpack-stream": "3.2.0",
+    "xhr2": "0.1.4"
   },
   "scripts": {
     "gulp-dev": "gulp development",
