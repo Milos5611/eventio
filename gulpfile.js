@@ -81,7 +81,7 @@ gulp.task("zip_prod", [ "webpack_prod" ], function () {
         .pipe(gulp.dest(path.resolve(__dirname, bases.dist)));
 });
 
-gulp.task("development", [ "setEnvDevelopment", "zip_dev" ]);
+gulp.task("development", [ "setEnvDevelopment"]);
 gulp.task("production", [ "setEnvProduction", "zip_prod" ]);
 gulp.task("start", [ "setEnvDevelopment", "webpackDevServer" ]);
 gulp.task("default", [ "start" ]);
