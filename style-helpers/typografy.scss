@@ -23,6 +23,11 @@ html * {
   box-shadow: none !important;
 }
 
+//login fail
+.login--fail {
+  color: deeppink !important;
+}
+
 // Fix autofill color
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px white inset !important;

@@ -162,6 +162,10 @@
           height: calc(100% - 1em);
           text-align: left;
           pointer-events: none;
+
+          &.fail--login {
+            border-bottom: 1px solid deeppink;
+          }
         }
 
         .input__label-content--hoshi {
