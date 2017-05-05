@@ -1,330 +1,40 @@
-@media (min-width: 1200px) {
-    .container {
-        width: 100%;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        width: 100%;
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        width: 100%;
-    }
-}
-
 html * {
-    outline: 0 !important;
-}
-
-.componentContainer {
-    margin-top: 20px;
+  outline: 0 !important;
 }
 
 .hidden {
-    display: none;
-}
-
-#app.container {
-    min-width: 768px;
-    //overflow: auto;
-    object-fit: contain;
-    padding: 0;
-
-    #appContainer {
-        padding: 0;
-        margin: 0;
-        // width: inherit;
-    }
+  display: none;
 }
 
 // button primary
-.daad-button-primary,
-.daad-button-primary:focus {
-    width: auto;
-    color: $white;
-    background-color: $orange;
-    border-color: $orange;
-    border-radius: 2px;
-    height: 48px;
-    padding: 12px 24px;
-    font-weight: bold;
-    font-family: TheSans_regular, sans-serif;
+.button--primary {
+  background: $green;
+  color: $white;
+  padding: 10px 30px;
 
-    span {
-        font-family: TheSans_regular, sans-serif;
-        font-size: 14px;
-        font-weight: bold;
-        line-height: 1.14;
-    }
-
-    &:hover {
-        background-color: $orangeHover;
-        border-color: $orangeHover;
-        color: $white;
-    }
+  &:hover {
+    background: $mediumGreen;
+  }
 }
 
 // button secondary
-.daad-button-secondary,
-.daad-button-secondary:focus {
-    width: auto;
-    color: $darkgreyHover;
-    background-color: $lightgrey;
-    border-color: $lightgrey;
-    border-radius: 2px;
-    height: 48px;
-    padding: 12px 24px;
-    font-weight: bold;
-
-    span {
-        font-family: TheSans_bold, sans-serif;
-        font-size: 14px;
-        line-height: 16px;
-    }
-
-    &:hover {
-        background-color: $whitegrey;
-        border-color: $whitegrey;
-        color: $darkgreyHover;
-    }
-}
-
-.daad-button-secondary-disabled {
-    cursor: auto;
-    &:hover {
-        background-color: $whitegrey;
-    }
-}
 
 .btn:active {
-    box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+// Fix autofill color
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
 }
 
 //links
 a {
-    cursor: pointer;
+  cursor: pointer;
 
-    &:hover {
-        text-decoration: none;
-    }
+  &:hover {
+    text-decoration: none;
+  }
 }
-
-.daad-font-icon-arrow-down {
-    &:after {
-        font-family: 'FontAwesome';
-        content: "\f107"; // icon arrow down
-        font-size: $font-size16;
-        margin-left: 8px;
-        font-weight: 100;
-
-        @media (max-width: 991px) {
-            margin-left: 0;
-        }
-    }
-}
-
-.daad-font-icon-arrow-up {
-    &:after {
-        font-family: 'FontAwesome';
-        content: "\f106"; //arrow up
-        font-size: $font-size16;
-        margin-left: 8px;
-        font-weight: 100;
-
-        @media (max-width: 991px) {
-            margin-left: 0;
-        }
-    }
-}
-
-.drag {
-    width: 100%;
-    padding: 7px 10px;
-    margin-bottom: 5px;
-    cursor: pointer;
-    background-color: #305a84;
-    border-radius: 2px;
-}
-
-.drop {
-    border: solid red 1px;
-    width: 100px;
-    height: 100px;
-}
-
-#appContainer h4,
-h4 {
-    color: $darkgreyHover;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.dropdown-toggle {
-    font-family: $rootFontRegular;
-
-    &:active,
-    &:focus {
-        box-shadow: none;
-    }
-}
-
-.btn-group.open .dropdown-toggle {
-    box-shadow: none;
-    background-color: $whitegrey;
-    &:focus {
-        background-color: $whitegrey;
-        color: $darkgreyHover;
-    }
-}
-
-.dropdown-menu span {
-    font-size: 14px;
-    color: $darkgreyHover;
-}
-
-.fa-eye-slash:before {
-    color: $orange;
-}
-
-ul.dropdown-menu {
-    min-width: 120px;
-}
-
-//infotext tooltip
-.tooltip-inner {
-    max-width: 400px;
-    padding: 3px 8px;
-    color: $darkgreyHover;
-    text-align: center;
-    background-color: $light-blue-grey;
-    border-radius: 4px;
-}
-
-.tooltip.top .tooltip-arrow {
-    border-top-color: $light-blue-grey;
-}
-
-.tooltip-arrow {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-color: transparent;
-    border-style: solid;
-}
-
-.tooltip.top-right .tooltip-arrow {
-    bottom: 0;
-    left: 5px;
-    margin-bottom: -5px;
-    border-width: 5px 5px 0;
-    border-top-color: $light-blue-grey;
-}
-
-.tooltip.right .tooltip-arrow {
-    top: 50%;
-    left: 0;
-    margin-top: -5px;
-    border-width: 5px 5px 5px 0;
-    border-right-color: $light-blue-grey;
-}
-
-.tooltip.bottom-right .tooltip-arrow {
-    top: 0;
-    left: 5px;
-    margin-top: -5px;
-    border-width: 0 5px 5px;
-    border-bottom-color: $light-blue-grey;
-}
-
-.table-responsive .table {
-    min-width: 1200px;
-    overflow-x: auto;
-}
-
-.date-tooltip {
-    font-weight: bold;
-    font-size: 14px;
-    font-family: TheSans_bold;
-
-    .tooltip-arrow {
-        top: 50%;
-        left: 0;
-        margin-top: -5px;
-        border-width: 5px 5px 5px 0;
-        border-right-color: $light-blue-grey !important;
-    }
-    .tooltip-inner {
-        color: $black;
-        background-color: $light-blue-grey !important;
-    }
-}
-
-.date-tooltip.history-row-tooltip,
-.date-tooltip.overview-date-tooltip {
-    .tooltip-arrow {
-        border-right-color: $middle-light-blue-grey !important;
-    }
-    .tooltip-inner {
-        background-color: $middle-light-blue-grey !important;
-    }
-}
-
-// Maintenance page
-.maintenance {
-    .login-header .daad-logo {
-        width: 15%;
-        padding-top: 12.64%;
-        float: left;
-        margin-left: 20px;
-        position: static;
-    }
-
-    .maintenance-info {
-        position: relative;
-        top: 35%;
-        bottom: 50%;
-        max-width: 650px;
-        margin: 0 auto;
-        padding: 20px;
-
-        article {
-            margin: 0 auto;
-            display: block;
-            text-align: left;
-            color: white;
-
-            h1 {
-                font-size: 60px;
-                border-bottom: 4px solid $white;
-                padding-bottom: 2px;
-            }
-
-            p {
-                font-size: 18px;
-            }
-        }
-    }
-}
-
-.chart-tooltip {
-    position: absolute;
-    text-align: center;
-    width: auto;
-    min-width: 70px;
-    height: auto;
-    min-height: 35px;
-    padding: 5px;
-    color: black;
-    font: 12px sans-serif;
-    background: lightblue;
-    border: 0;
-    border-radius: 8px;
-    pointer-events: none;
-}
-
 
 
