@@ -86,6 +86,6 @@
     "lint": "eslint lib/**/*.js",
     "test": "mocha --compilers js:babel-core/register lib/**/*.spec.js --recursive -r jsdom-global/register",
     "webpackDevServer": "webpack-dev-server --inline --hot --colors --progress",
-    "start": "webpack-dev-server --inline --hot --colors --progress",
+    "start": "webpack-dev-server --inline --hot --colors --progress"
   }
 }
