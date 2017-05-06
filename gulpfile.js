@@ -67,7 +67,7 @@ gulp.task("copy_favicon", function () {
         .pipe(gulp.dest(webpackConfig.output.path));
 });
 
-gulp.task("webpack_prod", [ "clean", "copy_index", "copy_fonts", "copy_favicon" ], function () {
+gulp.task("webpack_prod", [ "clean", "copy_index", "copy_fonts" ], function () {
     return gulp.src(webpackConfig.index)
         .pipe(webpackStream(webpackConfig))
         .pipe(gulp.dest(webpackConfig.output.path));
