@@ -58,7 +58,7 @@
     }
 
     .login-form {
-      width: 60%;
+      width: 50%;
       margin: auto;
       display: flex;
       flex-direction: column;
@@ -98,13 +98,14 @@
             text-transform: uppercase;
             padding: 10px 40px;
             margin-top: 20px;
+            font-size: $buttonFont;
           }
         }
 
         .show-password {
           position: absolute;
           right: 0;
-          margin-top: 10px;
+          margin-top: 25px;
           cursor: pointer;
           margin-right: 10px;
 
@@ -246,10 +247,6 @@
             -webkit-transform: translate3d(0, -40%, 0);
             transform: translate3d(0, -40%, 0);
           }
-        }
-
-        .btn {
-
         }
       }
     }
