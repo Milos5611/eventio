@@ -52,12 +52,6 @@ gulp.task("copy_index", function () {
         .pipe(gulp.dest(webpackConfig.output.path));
 });
 
-gulp.task("copy_configuration_prod", function () {
-    return gulp.src(path.resolve(__dirname + "/envconfig", "configuration.prod.js"))
-        .pipe(rename("configuration.js"))
-        .pipe(gulp.dest(webpackConfig.output.path));
-});
-
 gulp.task("webpackDevServer", shell.task([
     "npm run webpackDevServer"
 ]));
@@ -73,7 +67,7 @@ gulp.task("copy_favicon", function () {
         .pipe(gulp.dest(webpackConfig.output.path));
 });
 
-gulp.task("webpack_prod", [ "clean", "copy_index", "copy_configuration_prod", "copy_fonts", "copy_favicon" ], function () {
+gulp.task("webpack_prod", [ "clean", "copy_index", "copy_fonts" ], function () {
     return gulp.src(webpackConfig.index)
         .pipe(webpackStream(webpackConfig))
         .pipe(gulp.dest(webpackConfig.output.path));
@@ -87,7 +81,7 @@ gulp.task("zip_prod", [ "webpack_prod" ], function () {
         .pipe(gulp.dest(path.resolve(__dirname, bases.dist)));
 });
 
-gulp.task("development", [ "setEnvDevelopment", "zip_dev" ]);
+gulp.task("development", [ "setEnvDevelopment"]);
 gulp.task("production", [ "setEnvProduction", "zip_prod" ]);
 gulp.task("start", [ "setEnvDevelopment", "webpackDevServer" ]);
 gulp.task("default", [ "start" ]);

@@ -1,0 +1,45 @@
+html * {
+  outline: 0 !important;
+}
+
+.hidden {
+  display: none;
+}
+
+// button primary
+.button--primary {
+  background: $green;
+  color: $white;
+  padding: 10px 30px;
+
+  &:hover {
+    background: $mediumGreen;
+  }
+}
+
+// button secondary
+
+.btn:active {
+  box-shadow: none !important;
+}
+
+//login fail
+.login--fail {
+  color: deeppink !important;
+}
+
+// Fix autofill color
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
+
+//links
+a {
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+

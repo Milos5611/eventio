@@ -1,0 +1,21 @@
+// This file contains helpers- base css variables which will be used in other scss files
+
+$white: #ffffff !default;
+$black: #000000 !default;
+$green: #51ea95 !default;
+$mediumGreen: #1eef7b !default;
+$blue: #0060af !default;
+$mediumBlue: #307dbe !default;
+$darkBlue: #003366 !default;
+$lightgrey: #f3f3f3 !default;
+$mediumgrey: #999999 !default;
+$darkgrey: #666666 !default;
+$whitegrey: #f9f9f9 !default;
+$text: #6a7989 !default;
+//  Fonts -font-family
+$arial: Arial, Helvetica, sans-serif !default;
+$rootFontRegular: TheSans_regular, Helvetica, sans-serif !default;
+$rootFontBold: TheSans_bold, Helvetica, sans-serif !default;
+
+// Font sizes -font-size
+$buttonFont: 12px !default;
