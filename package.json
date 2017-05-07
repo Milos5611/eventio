@@ -10,7 +10,8 @@
   "license": "UNLICENSED",
   "keywords": [
     "strv",
-    "Eventio"
+    "Eventio",
+    "Heroku"
   ],
   "description": "Eventio test app",
   "dependencies": {
@@ -81,8 +82,7 @@
     "xhr2": "0.1.4"
   },
   "engines": {
-    "node": "7.10.0",
-    "npm": "4.2.0"
+    "node": "6.10.2"
   },
   "scripts": {
     "gulp-dev": "gulp development",
