@@ -91,7 +91,7 @@
     "lint": "eslint lib/**/*.js",
     "test": "mocha --compilers js:babel-core/register lib/**/*.spec.js --recursive -r jsdom-global/register",
     "webpackDevServer": "webpack-dev-server --inline --hot --colors --progress",
-    "postinstall": "rm -rf /node_modules && yarn && gulp production",
+    "postinstall": "yarn && gulp production",
     "start": "node server.js"
   }
 }
