@@ -80,6 +80,9 @@
     "webpack-stream": "3.2.0",
     "xhr2": "0.1.4"
   },
+  "engines": {
+    "node": "6.10.2"
+  },
   "scripts": {
     "gulp-dev": "gulp development",
     "gulp-prod": "gulp production",

@@ -1,7 +1,8 @@
 const express = require("express"),
 	path = require("path"),
-	port = process.env.port || 8080,
 	app = express();
+
+app.set('port', (process.env.PORT || 8080));
 
 app.use(express.static(__dirname + "/build"));
 app.get("*", (req, res) => {
