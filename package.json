@@ -81,7 +81,8 @@
     "xhr2": "0.1.4"
   },
   "engines": {
-    "node": "6.10.2"
+    "node": "7.10.0",
+    "npm": "4.2.0"
   },
   "scripts": {
     "gulp-dev": "gulp development",
