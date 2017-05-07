@@ -59,6 +59,7 @@ module.exports = {
             filename: "index.html",
             pkg: require("./package.json"),
             inject: false,
+	        favicon: "favicon.ico",
             minify : false
         }),
         new ExtractTextPlugin("[name][hash].css"),
