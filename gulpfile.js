@@ -32,7 +32,6 @@ gulp.task("setEnvProduction", () => {
 
 gulp.task("clean", () => {
 	del([
-		path.resolve(__dirname, "build"),
 		path.resolve(__dirname, "dist")
 	]);
 });
@@ -68,7 +67,7 @@ gulp.task("copy_favicon", () => {
 		.pipe(gulp.dest(webpackConfig.output.path));
 });
 
-gulp.task("webpack_prod", ["clean", "copy_configuration_prod", "copy_index", "copy_fonts", "copy_favicon"], () => {
+gulp.task("webpack_prod", ["clean", "copy_index"], () => {
 	return gulp.src(webpackConfig.index)
 		.pipe(webpackStream(webpackConfig))
 		.pipe(gulp.dest(webpackConfig.output.path));
