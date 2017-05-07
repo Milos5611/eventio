@@ -11,7 +11,7 @@ module.exports = {
 
     "devtool": "eval-source-map",
     "output": {
-        "path": path.resolve(__dirname, "build"),
+        "path": path.resolve(__dirname, "dist"),
         "filename": "js/bundle[hash].js"
     },
     "module": {
@@ -59,6 +59,7 @@ module.exports = {
             filename: "index.html",
             pkg: require("./package.json"),
             inject: false,
+	        favicon: "favicon.ico",
             minify : false
         }),
         new ExtractTextPlugin("[name][hash].css"),
