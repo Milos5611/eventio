@@ -2,12 +2,14 @@ const del = require("del"),
 	gulp = require("gulp"),
 	path = require("path"),
 	shell = require("gulp-shell"),
-	size = require("gulp-size"),
 	rename = require("gulp-rename"),
 	webpack = require("webpack"),
 	webpackConfig = require("./webpack.config.js"),
-	webpackStream = require("webpack-stream"),
-	zip = require("gulp-zip");
+	webpackStream = require("webpack-stream");
+
+gulp.task("webpackDevServer", shell.task([
+	"npm run webpackDevServer"
+]));
 
 gulp.task("setEnvDevelopment", () => {
 	webpackConfig.devtool = "eval-source-map";
@@ -29,22 +31,11 @@ gulp.task("setEnvProduction", () => {
 	]);
 });
 
-
 gulp.task("clean", () => {
 	del([
 		path.resolve(__dirname, "dist")
 	]);
 });
-
-gulp.task("cleanNode", () => {
-	del([
-		path.resolve(__dirname, "node_modules")
-	]);
-});
-
-gulp.task("webpackDevServer", shell.task([
-	"npm run webpackDevServer"
-]));
 
 gulp.task("copy_index", () => {
 	return gulp.src(path.resolve(__dirname, "index.html"))

@@ -62,6 +62,7 @@ module.exports = {
 	        favicon: "favicon.ico",
             minify : false
         }),
+	    new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /en/),
         new ExtractTextPlugin("[name][hash].css"),
         new webpack.ProvidePlugin({
             "React": "react"
