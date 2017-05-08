@@ -7,4 +7,8 @@
 @import "../lib/component/app/app";
 @import "../lib/component/login/login";
 @import "../lib/component/events/events";
+@import "../lib/component/events/eventsDetail";
 
+body {
+  background: $lightgrey;
+}

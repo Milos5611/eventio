@@ -1,0 +1,48 @@
+.events-detail {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .top__nav {
+    margin: 3em 0 2em 1em;
+    flex: 1 0 50%;
+
+    .att--detail {
+      color: #bbb;
+      font-weight: bold;
+    }
+  }
+
+  [class^="card-"] {
+    float: left;
+    width: 60%;
+    align-items: stretch;
+
+    .wrapper {
+      max-width: 100%;
+    }
+  }
+
+  .attendees {
+    background: $white;
+    width: 35%;
+    align-items: stretch;
+    float: left;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+    overflow: hidden;
+    padding: 1.6rem;
+    margin-bottom: 1.6rem;
+
+    .md-chip-wrapper {
+      display: inline-block;
+      margin: 15px 5px 5px;
+
+      .md-chip-wrapper-text {
+        border-radius: 10px;
+        padding: .6em 1em;
+        color: rgba(0, 0, 0, 0.39);
+        background-color: rgba(119, 119, 119, 0.18);
+      }
+    }
+  }
+}
