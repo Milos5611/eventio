@@ -1,14 +1,15 @@
-.events-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.events-card,
+.events-detail {
+  width: 70%;
+  margin: 10em auto 0;
+  overflow: auto;
 
   [class^="card-"] {
     display: inline-block;
+    width: 33.3%;
 
     .wrapper {
-      max-width: 400px;
+
       padding-left: 1em;
       padding-right: 1em;
 
