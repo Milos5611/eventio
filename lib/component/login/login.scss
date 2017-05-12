@@ -8,7 +8,6 @@
       min-height: 100%;
       position: fixed;
       display: block;
-      filter: grayscale(80%);
 
       &:after {
         content: "";
@@ -18,8 +17,8 @@
         z-index: -1;
         width: 100%;
         height: 100%;
-        opacity: 0.8;
-        background-color: #0072ff;
+        opacity: 0.85;
+        background-color: #323c46;
       }
 
       @media (max-width: 1200px) {
@@ -42,6 +41,11 @@
         .quote {
           align-items: flex-start;
           color: $white;
+          font-family: PlayfairDisplay, serif;
+          font-size: 36px;
+          text-align: center;
+          width: 310px;
+          height: 96px;
         }
 
         hr {
@@ -63,7 +67,6 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
       position: relative;
       height: 100vh;
       overflow: hidden;
@@ -72,182 +75,53 @@
         align-self: flex-start;
         margin-bottom: 20px;
 
+        .aside-title {
+          font-size: 28px;
+          line-height: 1.71;
+        }
+
         .aside-desc {
           color: $text;
+          font-size: 18px;
+          line-height: 1.33;
         }
       }
 
-      .form-group {
-        width: 100%;
+      // button primary
+      .btn-success {
+        font-family: Hind, serif;
+        text-transform: uppercase;
+        display: inline-table !important;
+        margin-top: 20px;
+
+        div > div {
+          height: 57px !important;
+        }
+      }
+
+      .password--wrapper {
         position: relative;
-        box-shadow: none;
-
-        .form-control {
-          box-shadow: none;
-
-          &.button--password {
-            height: 10px;
-            width: 10px;
-            background: red;
-          }
-        }
-
-        &:last-of-type {
-          .btn {
-            width: auto;
-            text-transform: uppercase;
-            padding: 10px 40px;
-            margin-top: 20px;
-            font-size: $buttonFont;
-          }
-        }
 
         .show-password {
           position: absolute;
           right: 0;
-          margin-top: 25px;
+          margin-top: 30px;
           cursor: pointer;
           margin-right: 10px;
+          object-fit: contain;
 
           &:before {
+            color: $whitegrey;
+          }
+
+          &:hover:before {
             color: grey;
           }
         }
+      }
 
-        .input {
-          position: relative;
-          z-index: 1;
-          display: inline-block;
-          margin: 1em;
-          width: calc(100% - 2em);
-          vertical-align: top;
-        }
-
-        .input__field {
-          padding: 0.8em;
-          border: none;
-          -webkit-appearance: none; /* for box shadows to show on iOS */
-        }
-
-        .input__field:focus {
-          outline: none;
-          box-shadow: none
-        }
-
-        .input__label {
-          width: 100%;
-          color: $text;
-          font-weight: bold;
-          font-size: 16px;
-          user-select: none;
-        }
-
-        .input__label-content {
-          position: relative;
-          display: block;
-          width: 100%;
-        }
-
-        .input__field--hoshi {
-          margin-top: 1em;
-          padding: 1.85em 0.15em;
-          width: 100%;
-          background: transparent;
-          color: #595F6E;
-        }
-
-        .input__label--hoshi {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          height: calc(100% - 1em);
-          text-align: left;
-          pointer-events: none;
-
-          &.fail--login {
-            border-bottom: 1px solid deeppink;
-          }
-        }
-
-        .input__label-content--hoshi {
-          bottom: 10px;
-        }
-
-        .input__label--hoshi::before,
-        .input__label--hoshi::after {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: -1px;
-          width: 100%;
-          height: 100%;
-          border-bottom: 1px solid #B9C1CA;
-        }
-
-        .input__label--hoshi::after {
-          margin-top: 2px;
-          border-bottom: 4px solid red;
-          -webkit-transform: translate3d(-100%, 0, 0);
-          transform: translate3d(-100%, 0, 0);
-          -webkit-transition: -webkit-transform 0.3s;
-          transition: transform 0.3s;
-        }
-
-        .input__label--hoshi-color-1::after {
-          border-color: hsl(200, 100%, 50%);
-        }
-
-        .input__label--hoshi-color-2::after {
-          border-color: hsl(160, 100%, 50%);
-        }
-
-        .input__field--hoshi:focus + .input__label--hoshi::after,
-        .input--filled .input__label--hoshi::after {
-          -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-        }
-
-        .input__field--hoshi:focus + .input__label--hoshi .input__label-content--hoshi,
-        .input--filled .input__label-content--hoshi {
-          -webkit-animation: anim-1 0.3s forwards;
-          animation: anim-1 0.3s forwards;
-        }
-
-        @-webkit-keyframes anim-1 {
-          50% {
-            opacity: 0;
-            -webkit-transform: translate3d(1em, 0, 0);
-            transform: translate3d(1em, 0, 0);
-          }
-          51% {
-            opacity: 0;
-            -webkit-transform: translate3d(-1em, -40%, 0);
-            transform: translate3d(-1em, -40%, 0);
-          }
-          100% {
-            opacity: 1;
-            -webkit-transform: translate3d(0, -40%, 0);
-            transform: translate3d(0, -40%, 0);
-          }
-        }
-
-        @keyframes anim-1 {
-          50% {
-            opacity: 0;
-            -webkit-transform: translate3d(1em, 0, 0);
-            transform: translate3d(1em, 0, 0);
-          }
-          51% {
-            opacity: 0;
-            -webkit-transform: translate3d(-1em, -40%, 0);
-            transform: translate3d(-1em, -40%, 0);
-          }
-          100% {
-            opacity: 1;
-            -webkit-transform: translate3d(0, -40%, 0);
-            transform: translate3d(0, -40%, 0);
-          }
-        }
+      &.error hr {
+        border: 1px solid deeppink !important;
       }
     }
   }

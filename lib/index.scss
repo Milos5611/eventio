@@ -1,9 +1,8 @@
 @import "../style-helpers/variables";
 @import "../style-helpers/path";
 @import "../style-helpers/typografy";
-/*@import "../style-helpers/font-face";*/
+@import "../style-helpers/font-face";
 @import "../style-helpers/mixins";
-
 @import "../lib/component/app/app";
 @import "../lib/component/login/login";
 @import "../lib/component/events/events";
