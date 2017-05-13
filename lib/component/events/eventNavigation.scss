@@ -1,0 +1,25 @@
+.event-box--navigation {
+  width: 70%;
+  margin: 10em auto 0;
+  padding-left: 10px;
+
+  p {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 2;
+    letter-spacing: 1px;
+    color: #a9aeb4;
+    text-transform: uppercase;
+    padding-right: 10px;
+    cursor: pointer;
+
+    &:active {
+      color: #323c46;
+    }
+
+    &:last-of-type {
+      padding-right: 0;
+    }
+  }
+}
