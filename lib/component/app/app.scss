@@ -21,6 +21,22 @@ body {
           color: #949ea8;
         }
       }
+
+      .arrow-left {
+        position: relative;
+        font-size: 16px;
+        color: #323c46;
+
+        &:before {
+          content: "";
+          background: url("/images/icon-back.png");
+          position: absolute;
+          left: -25px;
+          top: 3px;
+          width: 17px;
+          height: 16px;
+        }
+      }
     }
   }
 }

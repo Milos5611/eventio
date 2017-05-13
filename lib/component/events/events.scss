@@ -92,31 +92,6 @@
           }
         }
       }
-
-      .padding-tb {
-        padding-top: 1.6em;
-        padding-bottom: 1.6em;
-      }
-
-      .card__social--active {
-        visibility: visible;
-        /*z-index: 3;*/
-        transform: translateZ(0);
-        transform: translateX(-48px);
-        transition: transform 0.35s ease;
-      }
-
-      .share-toggle {
-        z-index: 2;
-        &:before {
-          content: "\f1e0";
-          font-family: 'FontAwesome';
-          color: #3498db;
-        }
-        &.share-expanded:before {
-          content: "\f00d";
-        }
-      }
     }
   }
 }
