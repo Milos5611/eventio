@@ -1,6 +1,8 @@
 .event--body {
   position: relative;
   z-index: 2;
+  @extend %addEventButton;
+
 }
 
 .events-card,
@@ -146,10 +148,26 @@
       }
     }
   }
+
+  @extend %addEventButton;
 }
 
 %hideTextOverflow {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+
+%addEventButton {
+  .add-events--button {
+    position: fixed;
+    right: 3em;
+    bottom: 3em;
+
+    button {
+      object-fit: contain;
+      background-color: #323c46 !important;
+      box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.15) !important;
+    }
+  }
 }
