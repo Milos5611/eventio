@@ -3,8 +3,8 @@
 @import "../style-helpers/typografy";
 @import "../style-helpers/font-face";
 @import "../style-helpers/mixins";
-@import "../lib/component/app/app";
-@import "../lib/component/login/login";
-@import "../lib/component/events/events";
-@import "../lib/component/events/eventsDetail";
-@import "../lib/component/events/eventNavigation";
+@import "component/app/app";
+@import "component/login/login";
+@import "component/events/events";
+@import "component/events/eventsDetail";
+@import "component/events/eventNavigation";

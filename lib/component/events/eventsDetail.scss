@@ -29,9 +29,12 @@
       padding-right: 0;
 
       .card__article {
-        .card__title {
-          font-size: 45px !important;
-          line-height: 1.07 !important;
+        a {
+          cursor: default;
+          .card__title {
+            font-size: 45px !important;
+            line-height: 1.07 !important;
+          }
         }
       }
     }

@@ -7,8 +7,8 @@
 .events-detail {
   width: 70%;
   margin: 1em auto 0;
-  overflow: auto;
   z-index: 2;
+  overflow: hidden;
 
   [class^="card-"] {
     display: inline-block;
@@ -100,4 +100,56 @@
       }
     }
   }
+
+  // List view
+  .list-view {
+    width: 100%;
+    min-height: 0;
+
+    .card__article {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 32px;
+      height: 72px;
+
+      a {
+        display: block;
+        width: 22%;
+
+        .card__title {
+          margin-top: 0;
+          @extend %hideTextOverflow;
+        }
+      }
+
+      .card__description {
+        width: 25%;
+        display: inline-block;
+        margin: 0 !important;
+        padding: 0 !important;
+        @extend %hideTextOverflow;
+      }
+
+      .card__owner {
+        padding: 0;
+        margin: 0 !important;
+      }
+
+      .card__meta {
+
+      }
+
+      .user {
+        line-height: 1.71;
+        color: #949ea8;
+      }
+    }
+  }
+}
+
+%hideTextOverflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
