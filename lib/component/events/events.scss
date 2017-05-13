@@ -1,8 +1,14 @@
+.event--body {
+  position: relative;
+  z-index: 2;
+}
+
 .events-card,
 .events-detail {
   width: 70%;
   margin: 1em auto 0;
   overflow: auto;
+  z-index: 2;
 
   [class^="card-"] {
     display: inline-block;
