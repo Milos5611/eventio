@@ -1,0 +1,67 @@
+.event-box--navigation {
+  width: 70%;
+  margin: 10em auto 0;
+  padding-left: 10px;
+
+  .toolbar {
+    .link {
+      p {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 2;
+        letter-spacing: 1px;
+        color: #a9aeb4;
+        text-transform: uppercase;
+        padding-right: 10px;
+        cursor: pointer;
+
+        &.active {
+          color: #323c46;
+        }
+
+        &:hover,
+        &:active,
+        &:visited {
+          color: #323c46;
+        }
+
+        &:last-of-type {
+          padding-right: 0;
+        }
+      }
+    }
+
+    .grid {
+      .grid--view {
+        &:before {
+          content: "";
+          background: url("/images/grid-view.png") no-repeat;
+          position: absolute;
+          width: 24px;
+          height: 24px;
+          left: -30px;
+        }
+
+        &.active:before {
+          background: url("/images/grid-view_active.png") no-repeat;
+        }
+      }
+
+      .list--view {
+        &:before {
+          content: "";
+          background: url("/images/list-view.png") no-repeat;
+          position: absolute;
+          width: 24px;
+          height: 24px;
+          left: -3px;
+        }
+
+        &.active:before {
+          background: url("/images/list-view_active.png") no-repeat;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "Playfair Display";
+  src: url($fontsPath + $fontsPath + "PlayfairDisplay-BoldItalic.eot");
+  src: url($fontsPath + $fontsPath + "PlayfairDisplay-BoldItalic.eot?#iefix") format("embedded-opentype"),
+  url($fontsPath + $fontsPath + "PlayfairDisplay-BoldItalic.woff2") format("woff2"),
+  url($fontsPath + $fontsPath + "PlayfairDisplay-BoldItalic.woff") format("woff"),
+  url($fontsPath + "PlayfairDisplay-BoldItalic.ttf") format("truetype"),
+  url($fontsPath + "PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url($fontsPath + "PlayfairDisplay-BlackItalic.eot");
+  src: url($fontsPath + "PlayfairDisplay-BlackItalic.eot?#iefix") format("embedded-opentype"),
+  url($fontsPath + "PlayfairDisplay-BlackItalic.woff2") format("woff2"),
+  url($fontsPath + "PlayfairDisplay-BlackItalic.woff") format("woff"),
+  url($fontsPath + "PlayfairDisplay-BlackItalic.ttf") format("truetype"),
+  url($fontsPath + "PlayfairDisplay-BlackItalic.svg#PlayfairDisplay-BlackItalic") format("svg");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url($fontsPath + "PlayfairDisplay-Black.eot");
+  src: url($fontsPath + "PlayfairDisplay-Black.eot?#iefix") format("embedded-opentype"),
+  url($fontsPath + "PlayfairDisplay-Black.woff2") format("woff2"),
+  url($fontsPath + "PlayfairDisplay-Black.woff") format("woff"),
+  url($fontsPath + "PlayfairDisplay-Black.ttf") format("truetype"),
+  url($fontsPath + "PlayfairDisplay-Black.svg#PlayfairDisplay-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hind";
+  src: url($fontsPath + "Hind-Light.eot");
+  src: url($fontsPath + "Hind-Light.eot?#iefix") format("embedded-opentype"),
+  url($fontsPath + "Hind-Light.woff2") format("woff2"),
+  url($fontsPath + "Hind-Light.woff") format("woff"),
+  url($fontsPath + "Hind-Light.ttf") format("truetype"),
+  url($fontsPath + "Hind-Light.svg#Hind-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hind";
+  src: url($fontsPath + "Hind-Regular.eot");
+  src: url($fontsPath + "Hind-Regular.eot?#iefix") format("embedded-opentype"),
+  url($fontsPath + "Hind-Regular.woff2") format("woff2"),
+  url($fontsPath + "Hind-Regular.woff") format("woff"),
+  url($fontsPath + "Hind-Regular.ttf") format("truetype"),
+  url($fontsPath + "Hind-Regular.svg#Hind-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hind";
+  src: url($fontsPath + "Hind-Medium.eot");
+  src: url($fontsPath + "Hind-Medium.eot?#iefix") format("embedded-opentype"),
+  url($fontsPath + "Hind-Medium.woff2") format("woff2"),
+  url($fontsPath + "Hind-Medium.woff") format("woff"),
+  url($fontsPath + "Hind-Medium.ttf") format("truetype"),
+  url($fontsPath + "Hind-Medium.svg#Hind-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hind";
+  src: url($fontsPath + "Hind-Bold.eot");
+  src: url($fontsPath + "Hind-Bold.eot?#iefix") format("embedded-opentype"),
+  url($fontsPath + "Hind-Bold.woff2") format("woff2"),
+  url($fontsPath + "Hind-Bold.woff") format("woff"),
+  url($fontsPath + "Hind-Bold.ttf") format("truetype"),
+  url($fontsPath + "Hind-Bold.svg#Hind-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hind";
+  src: url($fontsPath + "Hind-SemiBold.eot");
+  src: url($fontsPath + "Hind-SemiBold.eot?#iefix") format("embedded-opentype"),
+  url($fontsPath + "Hind-SemiBold.woff2") format("woff2"),
+  url($fontsPath + "Hind-SemiBold.woff") format("woff"),
+  url($fontsPath + "Hind-SemiBold.ttf") format("truetype"),
+  url($fontsPath + "Hind-SemiBold.svg#Hind-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url($fontsPath + "PlayfairDisplay-Italic.eot");
+  src: url($fontsPath + "PlayfairDisplay-Italic.eot?#iefix") format("embedded-opentype"),
+  url($fontsPath + "PlayfairDisplay-Italic.woff2") format("woff2"),
+  url($fontsPath + "PlayfairDisplay-Italic.woff") format("woff"),
+  url($fontsPath + "PlayfairDisplay-Italic.ttf") format("truetype"),
+  url($fontsPath + "PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url($fontsPath + "PlayfairDisplay-Bold.eot");
+  src: url($fontsPath + "PlayfairDisplay-Bold.eot?#iefix") format("embedded-opentype"),
+  url($fontsPath + "PlayfairDisplay-Bold.woff2") format("woff2"),
+  url($fontsPath + "PlayfairDisplay-Bold.woff") format("woff"),
+  url($fontsPath + "PlayfairDisplay-Bold.ttf") format("truetype"),
+  url($fontsPath + "PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url($fontsPath + "PlayfairDisplay-Regular.eot");
+  src: url($fontsPath + "PlayfairDisplay-Regular.eot?#iefix") format("embedded-opentype"),
+  url($fontsPath + "PlayfairDisplay-Regular.woff2") format("woff2"),
+  url($fontsPath + "PlayfairDisplay-Regular.woff") format("woff"),
+  url($fontsPath + "PlayfairDisplay-Regular.ttf") format("truetype"),
+  url($fontsPath + "PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

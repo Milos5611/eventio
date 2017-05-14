@@ -2,25 +2,12 @@ html * {
   outline: 0 !important;
 }
 
+body {
+  font-family: Hind, serif;
+}
+
 .hidden {
   display: none;
-}
-
-// button primary
-.button--primary {
-  background: $green;
-  color: $white;
-  padding: 10px 30px;
-
-  &:hover {
-    background: $mediumGreen;
-  }
-}
-
-// button secondary
-
-.btn:active {
-  box-shadow: none !important;
 }
 
 //login fail
@@ -28,18 +15,30 @@ html * {
   color: deeppink !important;
 }
 
-// Fix autofill color
-input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+// Fix autocomplete color
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus {
+  background-color: $lightgrey !important;
+  color: #555 !important;
+  -webkit-box-shadow: 0 0 0 1000px $lightgrey inset !important;
+  -webkit-text-fill-color: #555555 !important;
 }
 
 //links
 a {
   cursor: pointer;
+  font-family: "Hind", serif;
 
   &:hover {
     text-decoration: none;
   }
 }
 
-
+// Paragraph
+p {
+  font-family: Hind, serif;
+  font-size: 16px;
+  line-height: 1.33;
+}

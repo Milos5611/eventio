@@ -2,14 +2,19 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 7em auto 0;
+
 
   .top__nav {
     margin: 3em 0 2em 1em;
     flex: 1 0 50%;
 
     .att--detail {
-      color: #bbb;
-      font-weight: bold;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 2;
+      letter-spacing: 1px;
+      color: #a9aeb4;
     }
   }
 
@@ -20,6 +25,18 @@
 
     .wrapper {
       max-width: 100%;
+      margin-right: 17px;
+      padding-right: 0;
+
+      .card__article {
+        a {
+          cursor: default;
+          .card__title {
+            font-size: 45px !important;
+            line-height: 1.07 !important;
+          }
+        }
+      }
     }
   }
 
@@ -28,20 +45,30 @@
     width: 35%;
     align-items: stretch;
     float: left;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+    border-radius: 2px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.11);
     overflow: hidden;
-    padding: 1.6rem;
-    margin-bottom: 1.6rem;
+    padding: 1.6em;
+    margin-bottom: 1em;
 
-    .md-chip-wrapper {
+    h4 {
+      font-size: 22px;
+      line-height: 1.45;
+      color: #323c46;
+    }
+
+    .chip-wrapper {
       display: inline-block;
       margin: 15px 5px 5px;
 
-      .md-chip-wrapper-text {
-        border-radius: 10px;
+      .chip-wrapper-text {
+        border-radius: 100px;
+        background-color: #d9dce1;
         padding: .6em 1em;
-        color: rgba(0, 0, 0, 0.39);
-        background-color: rgba(119, 119, 119, 0.18);
+        font-size: 13px;
+        line-height: 2.38;
+        text-align: center;
+        color: #949ea8;
       }
     }
   }
