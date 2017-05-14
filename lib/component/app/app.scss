@@ -10,15 +10,35 @@ body {
       width: 100% !important;
       height: auto !important;
 
+      .navigation-logo-img {
+        background: url($imagesPath + "/spritesheet.png") no-repeat;
+        display: block;
+        width: 29px;
+        height: 28px;
+
+        &.black-logo {
+          background-position: -85px -5px;
+        }
+
+        &.white-logo {
+          background-position: -85px -43px;
+        }
+      }
+
       .signUp {
         font-family: Hind, serif;
         font-size: 14px;
         line-height: 1.71;
         color: #c9ced3;
+        display: block;
 
         a {
           font-weight: 500;
           color: #949ea8;
+        }
+
+        @media screen and (max-width: 768px) {
+          display: none;
         }
       }
 
@@ -29,13 +49,18 @@ body {
 
         &:before {
           content: "";
-          background: url("/images/icon-back.png");
+          width: 16px;
+          height: 16px;
+          background: url($imagesPath + "/spritesheet.png") no-repeat;
+          background-position: -59px -5px;
           position: absolute;
           left: -25px;
           top: 3px;
-          width: 17px;
-          height: 16px;
         }
+      }
+
+      @media screen and (max-width: 992px) {
+        position: relative;
       }
     }
   }

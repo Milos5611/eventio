@@ -30,12 +30,12 @@ module.exports = {
 			},
 			{
 				"test": /\.(jp?g|png|gif|svg)$/,
-				"loader": "file?name=[path][name].[hash].[ext]",
-				"include": path.resolve(__dirname, "images")
+				"loader": "file?name=[path][name].[ext]",
+				"include": path.resolve(__dirname, "images/")
 			},
 			{
 				"test": /\.(woff|woff2|eot|ttf|svg)$/,
-				"loader": "url-loader?limit=100000"
+				"loader": "url-loader?limit=100000&name=fonts/[name][hash].[ext]"
 			}
 		]
 	},
@@ -68,7 +68,6 @@ module.exports = {
 		new ExtractTextPlugin("[name][hash].css"),
 		new webpack.ProvidePlugin({
 			"React": "react"
-			
 		})
 	]
 };

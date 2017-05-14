@@ -1,5 +1,10 @@
 .evnt-login {
   .form-sign-in {
+    // Fix to remove padding left and right on col-span
+    > [class^="col-"] {
+      padding: 0;
+    }
+
     .image-holder {
       background: url($imagesPath + "str.png") no-repeat center;
       width: 25%;
@@ -45,7 +50,6 @@
           font-size: 36px;
           text-align: center;
           width: 310px;
-          height: 96px;
         }
 
         hr {
@@ -85,6 +89,11 @@
           font-size: 18px;
           line-height: 1.33;
         }
+
+        @media screen and(max-width: 768px) {
+          text-align: center;
+          align-self: center;
+        }
       }
 
       // button primary
@@ -123,7 +132,34 @@
       &.error hr {
         border: 1px solid deeppink !important;
       }
+
+      @media screen and (max-width: 768px) {
+        align-items: center;
+        width: 80%;
+
+        .password--wrapper {
+          width: 100%;
+        }
+      }
     }
+  }
+}
+
+.signUp--bootom {
+  display: none;
+  z-index: 9;
+  line-height: 1.71;
+  color: #c9ced3;
+
+  a {
+    font-weight: 500;
+    color: #949ea8;
+  }
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    margin-top: 30px;
+    display: block;
   }
 }
 

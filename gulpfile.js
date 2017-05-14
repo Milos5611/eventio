@@ -48,17 +48,12 @@ gulp.task("copy_configuration_prod", () => {
 		.pipe(gulp.dest(webpackConfig.output.path));
 });
 
-gulp.task("copy_fonts", () => {
-	return gulp.src(path.resolve(__dirname + "/fonts", "*"))
-		.pipe(gulp.dest(webpackConfig.output.path + "/fonts"));
-});
-
 gulp.task("copy_favicon", () => {
 	return gulp.src(path.resolve(__dirname, "favicon.ico"))
 		.pipe(gulp.dest(webpackConfig.output.path));
 });
 
-gulp.task("webpack_prod", ["clean", "copy_configuration_prod", "copy_index", "copy_fonts", "copy_favicon"], () => {
+gulp.task("webpack_prod", ["clean", "copy_configuration_prod", "copy_index", "copy_favicon"], () => {
 	return gulp.src(webpackConfig.index)
 		.pipe(webpackStream(webpackConfig))
 		.pipe(gulp.dest(webpackConfig.output.path));
