@@ -15,10 +15,15 @@ body {
         font-size: 14px;
         line-height: 1.71;
         color: #c9ced3;
+        display: block;
 
         a {
           font-weight: 500;
           color: #949ea8;
+        }
+
+        @media screen and (max-width: 768px) {
+          display: none;
         }
       }
 
@@ -36,6 +41,10 @@ body {
           width: 17px;
           height: 16px;
         }
+      }
+
+      @media screen and (max-width: 992px){
+        position: relative;
       }
     }
   }

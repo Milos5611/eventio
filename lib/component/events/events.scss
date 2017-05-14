@@ -13,10 +13,10 @@
   overflow: hidden;
 
   [class^="card-"] {
-    display: inline-block;
     width: 33.3%;
-    min-height: 300px;
-    height: auto;
+    height: 340px;
+    float: left;
+    margin-bottom: 15px;
 
     .wrapper {
 
@@ -42,6 +42,13 @@
 
             &.card__padding {
               padding: 2.6em 1.6em 1.6em;
+              min-height: 270px;
+              height: auto;
+
+              @media screen and (max-width: 768px) {
+                height: auto;
+                min-height: 0;
+              }
             }
 
             /* card meta */
@@ -55,7 +62,7 @@
             .card__article {
               .card__title {
                 font-size: 22px;
-                line-height: 2.18;
+                line-height: 1.18;
                 color: #323c46;
                 margin-bottom: 0;
               }
@@ -101,12 +108,23 @@
         }
       }
     }
+
+    @media screen and (max-width: 1200px) {
+      width: 50%;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      height: auto;
+      margin-bottom: 0;
+    }
   }
 
   // List view
   .list-view {
     width: 100%;
     min-height: 0;
+    height: auto !important;
 
     .card__article {
       display: flex;
@@ -150,6 +168,10 @@
   }
 
   @extend %addEventButton;
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
 }
 
 %hideTextOverflow {
@@ -163,11 +185,16 @@
     position: fixed;
     right: 3em;
     bottom: 3em;
+    z-index: 1;
 
     button {
       object-fit: contain;
       background-color: #323c46 !important;
       box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.15) !important;
+    }
+
+    @media screen and(max-width: 768px) {
+      right: 0;
     }
   }
 }
