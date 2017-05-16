@@ -150,7 +150,7 @@
 
         .card__title {
           margin-top: 0;
-          @extend %hideTextOverflow;
+          @extend %textOverflow;
         }
       }
 
@@ -159,7 +159,7 @@
         display: inline-block;
         margin: 0 !important;
         padding: 0 !important;
-        @extend %hideTextOverflow;
+        @extend %textOverflow;
       }
 
       .card__owner {
@@ -185,7 +185,24 @@
   }
 }
 
-%hideTextOverflow {
+// Create Event
+.event-create--info {
+  h3 {
+    font-size: 28px;
+    line-height: 1.71;
+    text-align: center;
+    color: #323c46;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.33;
+    text-align: center;
+    color: #949ea8;
+  }
+}
+
+%textOverflow {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -209,3 +226,4 @@
     }
   }
 }
+
