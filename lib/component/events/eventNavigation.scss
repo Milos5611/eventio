@@ -3,6 +3,10 @@
   margin: 10em auto 0;
   padding-left: 10px;
 
+  .toolbar-wrapper {
+    display: flex;
+  }
+
   .toolbar {
     .link {
       p {
@@ -30,19 +34,61 @@
           padding-right: 0;
         }
       }
+
+      @media screen and(max-width: 768px) {
+        display: none !important;
+      }
+    }
+
+    .link-mobile {
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 2;
+      letter-spacing: 1px;
+      color: #323c46;
+      margin-left: -20px;
+      margin-top: -10px;
+      width: 100px;
+      display: none !important;
+
+      > div {
+        font-size: 12px !important;
+        margin-left: -13px !important;
+        margin-top: 2px !important;;
+      }
+
+      .link-text {
+        color: #a9aeb4;
+        font-size: 12px;
+        margin-top: 23px;
+        padding: 0;
+      }
+
+      @media screen and(max-width: 768px) {
+        display: flex !important;
+      }
     }
 
     .grid {
-      background: url($imagesPath + "/spritesheet.png") no-repeat;
-      display: block;
       .grid--view {
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px transparent;
+        transition-duration: 0.3s;
+        transition-property: box-shadow, transform;
         &:before {
           content: "";
           width: 17px;
           height: 13px;
+          background: url($imagesPath + "/spritesheet.png") no-repeat;
+          display: block;
           background-position: -5px -5px;
           position: absolute;
           left: -30px;
+        }
+
+        &:hover {
+          box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+          transform: scale(1.1);
         }
 
         &.active:before {
@@ -51,10 +97,22 @@
       }
 
       .list--view {
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px transparent;
+        transition-duration: 0.3s;
+        transition-property: box-shadow, transform;
+
+        &:hover {
+          box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+          transform: scale(1.1);
+        }
+
         &:before {
           content: "";
           width: 17px;
           height: 13px;
+          background: url($imagesPath + "/spritesheet.png") no-repeat;
+          display: block;
           background-position: -31px -31px;
           position: absolute;
           left: -3px;
