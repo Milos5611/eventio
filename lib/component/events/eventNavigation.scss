@@ -81,7 +81,7 @@
           height: 13px;
           background: url($imagesPath + "/spritesheet.png") no-repeat;
           display: block;
-          background-position: -5px -5px;
+          background-position: -10px -32px;
           position: absolute;
           left: -30px;
         }
@@ -92,7 +92,7 @@
         }
 
         &.active:before {
-          background-position: -32px -5px;
+          background-position: -37px -32px;
         }
       }
 
@@ -113,13 +113,13 @@
           height: 13px;
           background: url($imagesPath + "/spritesheet.png") no-repeat;
           display: block;
-          background-position: -31px -31px;
+          background-position: -10px -32px;
           position: absolute;
           left: -3px;
         }
 
         &.active:before {
-          background-position: -58px -31px;
+          background-position: -63px -58px;
         }
       }
     }
