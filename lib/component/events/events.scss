@@ -202,6 +202,15 @@
   }
 }
 
+.event-create--popup {
+  .btn-success {
+    box-shadow: none !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin: 10px 0 !important;
+  }
+}
+
 %textOverflow {
   text-overflow: ellipsis;
   overflow: hidden;

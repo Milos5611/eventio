@@ -23,6 +23,12 @@ body {
         &.white-logo {
           background-position: -85px -43px;
         }
+
+        @media screen and (max-width: 992px) {
+          &.white-logo {
+            background-position: -85px -5px;
+          }
+        }
       }
 
       .signUp {
