@@ -10,6 +10,14 @@ body {
       width: 100% !important;
       height: auto !important;
 
+      .header-name {
+        display: block;
+        margin-left: 10px;
+        @media screen and(max-width: 768px) {
+          display: none;
+        }
+      }
+
       .navigation-logo-img {
         background: url($imagesPath + "/spritesheet.png") no-repeat;
         display: block;
@@ -17,16 +25,16 @@ body {
         height: 28px;
 
         &.black-logo {
-          background-position: -85px -5px;
+          background-position: -89px -32px;
         }
 
         &.white-logo {
-          background-position: -85px -43px;
+          background-position: -89px -69px;
         }
 
         @media screen and (max-width: 992px) {
           &.white-logo {
-            background-position: -85px -5px;
+            background-position: -89px -32px;
           }
         }
       }
@@ -58,7 +66,7 @@ body {
           width: 16px;
           height: 16px;
           background: url($imagesPath + "/spritesheet.png") no-repeat;
-          background-position: -59px -5px;
+          background-position: -64px -32px;
           position: absolute;
           left: -25px;
           top: 3px;

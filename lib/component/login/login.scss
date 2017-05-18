@@ -103,6 +103,10 @@
         display: inline-table !important;
         margin-top: 20px;
 
+        button {
+          margin: 0 !important;
+        }
+
         div > div {
           height: 57px !important;
         }
@@ -136,6 +140,9 @@
       @media screen and (max-width: 768px) {
         align-items: center;
         width: 80%;
+        height: 100%;
+        overflow: hidden;
+        margin-bottom: 100px;
 
         .password--wrapper {
           width: 100%;
