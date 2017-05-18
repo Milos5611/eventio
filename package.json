@@ -1,6 +1,6 @@
 {
   "name": "Eventio",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "main": "./lib/index.js",
   "title": "STRV",
   "repository": {
@@ -13,7 +13,7 @@
     "Eventio",
     "Heroku"
   ],
-  "description": "Eventio - STRV test application",
+  "description": "Eventio - STRV application",
   "dependencies": {
     "babel-plugin-transform-decorators-legacy": "1.3.4",
     "domready": "1.0.8",
