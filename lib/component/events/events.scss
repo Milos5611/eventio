@@ -120,6 +120,10 @@
           }
         }
       }
+
+      @media screen and (max-width: 768px) {
+        padding-right: 0;
+      }
     }
 
     @media screen and (max-width: 1200px) {
@@ -130,6 +134,7 @@
       width: 100%;
       height: auto;
       margin-bottom: 0;
+      padding-right: 0;
     }
   }
 
@@ -182,8 +187,16 @@
 
   @extend %addEventButton;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: 1200px) {
     width: 90%;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
   }
 }
 
@@ -205,6 +218,22 @@
 }
 
 .event-create--popup {
+  .event-create--body {
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      background-color: #F5F5F5;
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      background-color: #F5F5F5;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgb(34, 212, 134);
+    }
+  }
+
   .btn-success {
     box-shadow: none !important;
     display: flex !important;
