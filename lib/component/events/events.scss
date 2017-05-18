@@ -11,7 +11,6 @@
   width: 70%;
   margin: 1em auto 0;
   z-index: 2;
-  overflow: hidden;
 
   [class^="card-"] {
     width: 33.3%;
@@ -20,7 +19,7 @@
     margin-bottom: 15px;
 
     .wrapper {
-
+      overflow: hidden;
       padding-left: .5em;
       padding-right: .5em;
 
@@ -36,7 +35,9 @@
         &.radius {
           border-radius: 2px;
           background-color: $white;
-          box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.11);
+          box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .11);
+
+          @extend %transitionTopBlue;
 
           .card__content {
             position: relative;
@@ -209,31 +210,6 @@
     display: flex !important;
     justify-content: center !important;
     margin: 10px 0 !important;
-  }
-}
-
-%textOverflow {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-%addEventButton {
-  .add-events--button {
-    position: fixed;
-    right: 3em;
-    bottom: 3em;
-    z-index: 1;
-
-    button {
-      object-fit: contain;
-      background-color: #323c46 !important;
-      box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.15) !important;
-    }
-
-    @media screen and(max-width: 768px) {
-      right: 0;
-    }
   }
 }
 
