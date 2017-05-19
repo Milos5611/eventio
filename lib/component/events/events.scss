@@ -2,7 +2,7 @@
   position: relative;
   z-index: 2;
   @extend %addEventButton;
-
+  @extend %editEventButton;
 }
 
 .events-card,
@@ -11,7 +11,6 @@
   width: 70%;
   margin: 1em auto 0;
   z-index: 2;
-  overflow: hidden;
 
   [class^="card-"] {
     width: 33.3%;
@@ -20,7 +19,7 @@
     margin-bottom: 15px;
 
     .wrapper {
-
+      overflow: hidden;
       padding-left: .5em;
       padding-right: .5em;
 
@@ -36,7 +35,9 @@
         &.radius {
           border-radius: 2px;
           background-color: $white;
-          box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.11);
+          box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .11);
+
+          @extend %transitionTopBlue;
 
           .card__content {
             position: relative;
@@ -119,6 +120,10 @@
           }
         }
       }
+
+      @media screen and (max-width: 768px) {
+        padding-right: 0;
+      }
     }
 
     @media screen and (max-width: 1200px) {
@@ -129,6 +134,7 @@
       width: 100%;
       height: auto;
       margin-bottom: 0;
+      padding-right: 0;
     }
   }
 
@@ -180,9 +186,18 @@
   }
 
   @extend %addEventButton;
+  @extend %editEventButton;
+
+  @media screen and (max-width: 1200px) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 90%;
+  }
 
   @media screen and (max-width: 768px) {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -204,36 +219,27 @@
 }
 
 .event-create--popup {
+  .event-create--body {
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      background-color: #F5F5F5;
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      background-color: #F5F5F5;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgb(34, 212, 134);
+    }
+  }
+
   .btn-success {
     box-shadow: none !important;
     display: flex !important;
     justify-content: center !important;
     margin: 10px 0 !important;
-  }
-}
-
-%textOverflow {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-%addEventButton {
-  .add-events--button {
-    position: fixed;
-    right: 3em;
-    bottom: 3em;
-    z-index: 1;
-
-    button {
-      object-fit: contain;
-      background-color: #323c46 !important;
-      box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.15) !important;
-    }
-
-    @media screen and(max-width: 768px) {
-      right: 0;
-    }
   }
 }
 

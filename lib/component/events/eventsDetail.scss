@@ -39,7 +39,25 @@
         display: inline-block;
         width: 10px;
         height: 12px;
+
+        @media screen and (max-width: 768px) {
+          visibility: visible;
+          position: absolute;
+          right: 0;
+          margin-top: 35px;
+        }
       }
+
+      @media screen and (max-width: 768px) {
+        visibility: hidden;
+        float: none;
+        margin-top: 0;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      float: left;
+      padding-left: 0;
+      margin-left: 0;
     }
   }
 
@@ -57,6 +75,7 @@
         a {
           cursor: default;
           .card__title {
+            word-break: break-word;
             font-size: 45px !important;
             line-height: 1.07 !important;
           }
@@ -66,6 +85,15 @@
 
     &.event-edit {
       height: auto;
+    }
+
+    @media screen and(max-width: 768px) {
+      width: 100%;
+
+      .wrapper {
+        margin-right: 0;
+        padding-left: 0;
+      }
     }
   }
 
@@ -85,5 +113,38 @@
       line-height: 1.45;
       color: #323c46;
     }
+
+    .current-user--attended {
+      box-sizing: border-box;
+      display: flex;
+      cursor: default;
+      text-decoration: none;
+      margin: 0 15px 10px 0;
+      outline: none;
+      position: relative;
+      z-index: 1;
+      background-color: $white;
+      border: 2px solid rgb(224, 224, 224);
+      border-radius: 16px;
+      flex-wrap: wrap;
+      float: left;
+      color: rgb(148, 158, 168);
+      font-size: 14px;
+      line-height: 32px;
+      padding-left: 12px;
+      padding-right: 12px;
+      user-select: none;
+      white-space: nowrap;
+    }
+
+    @media screen and(max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  @extend %editEventButton;
+
+  @media screen and(max-width: 992px) {
+    width: 90%;
   }
 }
