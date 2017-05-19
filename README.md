@@ -48,6 +48,12 @@ or
 ```
 npm run webpackDevServer
 ```
+
+## Starting
+
+Open your browser and find app loaded on localhost:8080 -port
+
+
 ## Built With
 
 * [React](https://facebook.github.io/react/) - The javascript library
