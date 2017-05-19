@@ -174,13 +174,31 @@
         margin: 0 !important;
       }
 
-      .card__meta {
-
-      }
-
       .user {
         line-height: 1.71;
         color: #949ea8;
+      }
+
+      @media screen and (max-width: 768px) {
+        position: relative;
+        display: block;
+        height: auto;
+        padding: 15px;
+
+        a, .card__description {
+          width: 100%;
+        }
+
+        .card__owner {
+          visibility: hidden;
+        }
+
+        .card__subscribe {
+          display: inline-block;
+          position: absolute;
+          right: 15px;
+          bottom: 15px;
+        }
       }
     }
   }
@@ -189,14 +207,10 @@
   @extend %editEventButton;
 
   @media screen and (max-width: 1200px) {
-    width: 80%;
-  }
-
-  @media screen and (max-width: 1200px) {
     width: 90%;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 992px) {
     width: 100%;
   }
 }
