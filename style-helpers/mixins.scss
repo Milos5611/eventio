@@ -175,3 +175,22 @@
     }
   }
 }
+
+%editEventButton {
+  .edit-events--button {
+    position: fixed;
+    right: 3em;
+    bottom: 3em;
+    z-index: 1;
+
+    button {
+      object-fit: contain;
+      background-color: rgb(34, 212, 134) !important;
+      box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.15) !important;
+    }
+
+    @media screen and(max-width: 768px) {
+      right: 0;
+    }
+  }
+}

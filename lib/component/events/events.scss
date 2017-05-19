@@ -2,7 +2,7 @@
   position: relative;
   z-index: 2;
   @extend %addEventButton;
-
+  @extend %editEventButton;
 }
 
 .events-card,
@@ -186,6 +186,7 @@
   }
 
   @extend %addEventButton;
+  @extend %editEventButton;
 
   @media screen and (max-width: 1200px) {
     width: 80%;
