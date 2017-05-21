@@ -1,3 +1,4 @@
+require('newrelic');
 const express = require("express"),
 	path = require("path"),
 	port = process.env.PORT || 8080,
