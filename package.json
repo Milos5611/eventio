@@ -23,6 +23,7 @@
     "js-base64": "2.1.9",
     "material-ui": "0.18.1",
     "moment": "2.18.1",
+    "newrelic": "^1.39.1",
     "react": "15.4.2",
     "react-addons-test-utils": "latest",
     "react-bootstrap": "0.30.8",
