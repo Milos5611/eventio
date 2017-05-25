@@ -1,6 +1,6 @@
 # Project Title
 
-EVENTIO - STRV App Test
+EVENTIO
 
 ## Getting Started
 
