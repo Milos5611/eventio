@@ -22,7 +22,7 @@
     "intl": "1.2.5",
     "js-base64": "2.1.9",
     "material-ui": "0.18.1",
-    "moment": "2.19.3",
+    "moment": "2.29.2",
     "newrelic": "^1.39.1",
     "react": "15.4.2",
     "react-addons-test-utils": "latest",
